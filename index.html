@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=alata:400|josefin-sans:300" rel="stylesheet" />
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
-    <nav class="navigation" role="navigation">
-        <img class="navigation__close" src="./images/icon-close.svg" alt="" aria-label="">
+    <header class="header-mobile">
+        <img class="header-mobile__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
+        <img class="header-mobile__icon-menu" src="./images/icon-hamburger.svg" alt="Icon menu" aria-label="Icon menu" aria-hidden="false">
+        <img class="header-mobile__icon-close header-mobile__icon--hidden" src="./images/icon-close.svg" alt="" aria-label="" aria-hidden="true">
+    </header>
+
+    <nav class="navigation navigation--hidden" role="navigation" aria-hidden="true">
         <a class="navigation__link" href="" role="menuitem">About</a>
         <a class="navigation__link" href="" role="menuitem">Careers</a>
         <a class="navigation__link" href="" role="menuitem">Events</a>
@@ -20,29 +28,27 @@
         <a class="navigation__link" href="" role="menuitem">Support</a>
     </nav>
 
-    <header class="header">
-        <div class="header__container">
-            <img class="header__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
-            <img class="header__icon-menu" src="./images/icon-hamburger.svg" alt="Icon menu" aria-label="Icon menu"
-                aria-hidden="false">
-            <nav class="navigation" role="navigation" aria-hidden="true">
-                <a class="navigation__link" href="" role="menuitem">About</a>
-                <a class="navigation__link" href="" role="menuitem">Careers</a>
-                <a class="navigation__link" href="" role="menuitem">Events</a>
-                <a class="navigation__link" href="" role="menuitem">Products</a>
-                <a class="navigation__link" href="" role="menuitem">Support</a>
-            </nav>
-        </div>
-        <h1 class="header__title">Immersive experiences that deliver</h1>
-    </header>
-
     <main class="main">
+        <section class="banner" role="banner">
+            <header class="banner__header" aria-hidden="true" style="display: none;">
+                <img class="banner__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
+                <nav class="menu" role="navigation" aria-hidden="true">
+                    <a class="menu__link" href="" role="menuitem">About</a>
+                    <a class="menu__link" href="" role="menuitem">Careers</a>
+                    <a class="menu__link" href="" role="menuitem">Events</a>
+                    <a class="menu__link" href="" role="menuitem">Products</a>
+                    <a class="menu__link" href="" role="menuitem">Support</a>
+                </nav>
+            </header>
+            <h1 class="header__title">Immersive experiences that deliver</h1>
+        </section>
         <section class="about">
             <img class="about__img" src="" alt="" aria-label="" sizes="" srcset="">
             <h2 class="about__title">The leader in interactive VR</h2>
             <p class="about__desc">
                 Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the
-                best companies around the globe. Our award-winning creations have transformed businesses through digital
+                best companies around the globe. Our award-winning creations have transformed businesses through
+                digital
                 experiences that bind to their brand.
             </p>
         </section>
@@ -89,7 +95,7 @@
             <img class="" src="./images/icon-facebook.svg" alt="" aria-label="">
             <img class="" src="./images/icon-twitter.svg" alt="" aria-label="">
             <img class="" src="./images/icon-pinterest.svg" alt="" aria-label="">
-            <img class="" src="./images/icon-instagram.svg" alt="" aria-label="">
+            <!-- <img class="" src="./images/icon-instagram.svg" alt="" aria-label=""> -->
         </div>
         <p class="">© 2021 Loopstudios. All rights reserved.</p>
     </footer>
