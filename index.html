@@ -8,40 +8,43 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=alata:400|josefin-sans:300" rel="stylesheet" />
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <script src="./app.js" defer></script>
 </head>
 
 <body>
-    <header class="header-mobile">
-        <img class="header-mobile__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
-        <img class="header-mobile__icon-menu" src="./images/icon-hamburger.svg" alt="Icon menu" aria-label="Icon menu" aria-hidden="false">
-        <img class="header-mobile__icon-close header-mobile__icon--hidden" src="./images/icon-close.svg" alt="" aria-label="" aria-hidden="true">
+
+    <header class="header">
+        <div class="header__navigation">
+            <img class="header__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
+            <nav class="menu" role="navigation" aria-hidden="true">
+                <a class="menu__link" href="" role="menuitem">About</a>
+                <a class="menu__link" href="" role="menuitem">Careers</a>
+                <a class="menu__link" href="" role="menuitem">Events</a>
+                <a class="menu__link" href="" role="menuitem">Products</a>
+                <a class="menu__link" href="" role="menuitem">Support</a>
+            </nav>
+            <img class="header__icon-menu" src="./images/icon-hamburger.svg" alt="Icon menu" aria-label="Icon menu" aria-hidden="false">
+        </div>
+        <h1 class="header__title">Immersive experiences that <br> deliver</h1>
     </header>
 
-    <nav class="navigation navigation--hidden" role="navigation" aria-hidden="true">
-        <a class="navigation__link" href="" role="menuitem">About</a>
-        <a class="navigation__link" href="" role="menuitem">Careers</a>
-        <a class="navigation__link" href="" role="menuitem">Events</a>
-        <a class="navigation__link" href="" role="menuitem">Products</a>
-        <a class="navigation__link" href="" role="menuitem">Support</a>
-    </nav>
+    <aside class="aside-menu display--hidden" aria-hidden="true">
+        <header class="aside-menu__header">
+            <img class="aside-menu__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
+            <img class="aside-menu__icon-close" src="./images/icon-close.svg" alt="" aria-label="" aria-hidden="true">
+        </header>
+        <nav class="aside-menu__menu" role="navigation">
+            <a class="aside-menu__link" href="" role="menuitem">About</a>
+            <a class="aside-menu__link" href="" role="menuitem">Careers</a>
+            <a class="aside-menu__link" href="" role="menuitem">Events</a>
+            <a class="aside-menu__link" href="" role="menuitem">Products</a>
+            <a class="aside-menu__link" href="" role="menuitem">Support</a>
+        </nav>
+    </aside>
 
     <main class="main">
-        <section class="banner" role="banner">
-            <header class="banner__header" aria-hidden="true" style="display: none;">
-                <img class="banner__logo" src="./images/logo.svg" alt="Logo enterprise" aria-label="Logo enterprise">
-                <nav class="menu" role="navigation" aria-hidden="true">
-                    <a class="menu__link" href="" role="menuitem">About</a>
-                    <a class="menu__link" href="" role="menuitem">Careers</a>
-                    <a class="menu__link" href="" role="menuitem">Events</a>
-                    <a class="menu__link" href="" role="menuitem">Products</a>
-                    <a class="menu__link" href="" role="menuitem">Support</a>
-                </nav>
-            </header>
-            <h1 class="header__title">Immersive experiences that deliver</h1>
-        </section>
         <section class="about">
             <img class="about__img" src="" alt="" aria-label="" sizes="" srcset="">
             <h2 class="about__title">The leader in interactive VR</h2>

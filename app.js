@@ -1,19 +1,28 @@
-// Recovery of HTML Elements
-const headerMobileElement = document.querySelector(".header-mobile");
-const navigationMobileELement = document.querySelector(".navigation");
-const iconMenuElement = document.querySelector(".header-mobile__icon-menu");
-const iconCloseElement = document.querySelector(".header-mobile__icon-close");
 
-console.log(iconCloseElement);
+const mobileMenu = {
+    asideMenuMobileELement: document.querySelector(".aside-menu"),
+    linkElements: document.querySelectorAll(".aside-menu__link"),
+    iconMenuElement: document.querySelector(".header__icon-menu"),
+    iconCloseElement: document.querySelector(".aside-menu__icon-close"),
 
-// Function
-const handlerMobileMenu = function(e)
-{
-    headerMobileElement.classList.toggle("header-mobile--menu-open");
-    navigationMobileELement.classList.toggle("navigation--hidden");
-    iconMenuElement.classList.toggle("header-mobile__icon--hidden");
-    iconCloseElement.classList.toggle("header-mobile__icon--hidden");
-}
+    init: function()
+    {
+        mobileMenu.mobileMenuEventClick();
+    },
 
-iconMenuElement.addEventListener("click", handlerMobileMenu);
-iconCloseElement.addEventListener("click", handlerMobileMenu);
+    mobileMenuEventClick: function()
+    {
+        mobileMenu.iconMenuElement.addEventListener("click", mobileMenu.handleMobileMenuClick);
+        mobileMenu.iconCloseElement.addEventListener("click", mobileMenu.handleMobileMenuClick);
+        for (const linkElement of mobileMenu.linkElements) {
+            linkElement.addEventListener("click", mobileMenu.handleMobileMenuClick);
+        }
+    },
+
+    handleMobileMenuClick: function()
+    {
+        mobileMenu.asideMenuMobileELement.classList.toggle("display--hidden");
+    },
+};
+
+document.addEventListener("DOMContentLoaded", mobileMenu.init);
