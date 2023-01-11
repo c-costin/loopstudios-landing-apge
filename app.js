@@ -7,10 +7,10 @@ const mobileMenu = {
 
     init: function()
     {
-        mobileMenu.mobileMenuEventClick();
+        mobileMenu.addEventMobileMenu();
     },
 
-    mobileMenuEventClick: function()
+    addEventMobileMenu: function()
     {
         mobileMenu.iconMenuElement.addEventListener("click", mobileMenu.handleMobileMenuClick);
         mobileMenu.iconCloseElement.addEventListener("click", mobileMenu.handleMobileMenuClick);

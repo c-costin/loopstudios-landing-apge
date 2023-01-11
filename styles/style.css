@@ -1,9 +1,10 @@
 /* ==== DECLARATION VARIABLE ==== */
 html {
   /* Colors */
-  --color-black: #121212;
-  --color-white: #FEFEFE;
-
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-dark-gray: hsl(0, 0%, 55%);
+  --color-very-dark-gray: hsl(0, 0%, 41%);
   /* Fonts */
   --font-alata: 'Alata', sans-serif;
   --font-josefin-sans: 'Josefin Sans', sans-serif;
@@ -13,50 +14,46 @@ html {
 body {
   height: 300vh;
   position: relative;
+  font-size: 15px;
   font-family: var(--font-alata);
-  background: lightblue;
 }
 
 /* ==== UTILITARY ==== */
 .display--hidden {
-  display: none;
+  display: none !important;
 }
 
 /* ==== HEADER ==== */
 .header {
   padding: 3rem 2rem;
   width: 100%;
+  height: 100vh;
   background-image: url(../images/mobile/image-hero.jpg);
   background-size: cover;
   color: var(--color-white);
 }
-
 .header__navigation {
   margin-bottom: 25vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header__logo {
   width: 156px;
 }
-
 .menu {
   display: none;
 }
-
 .header__icon-menu {
   width: 1.5rem;
 }
-
 .header__title {
   padding: 1rem;
   border: 2px solid var(--color-white);
   text-transform: uppercase;
   font-weight: 300;
   font-family: var(--font-josefin-sans);
-  font-size: 2.3em;
+  font-size: 2.5em;
 }
 
 /* ==== ASIDE MENU ==== */
@@ -95,13 +92,35 @@ body {
   color: var(--color-white);
 }
 
+/* ==== SECTION ABOUT ==== */
+.about {
+  padding: 3rem 1.5rem;
+}
+.about__img {
+  margin-top: 3rem;
+}
+.about__title {
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: var(--font-josefin-sans);
+  font-weight: 300;
+}
+.about__desc {
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-dark-gray);
+}
+
+/* ==== SECTION CREATION ===== */
+
 
 /* ==== REFERENCE ==== */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
