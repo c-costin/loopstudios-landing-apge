@@ -114,13 +114,45 @@ body {
 }
 
 /* ==== SECTION CREATION ===== */
-
+.creation {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creation__title {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  font-weight: 300;
+  font-family: var(--font-josefin-sans);
+}
+.creation-card {
+  padding: 1rem;
+  width: 100%;
+}
+.creation-card__title {
+  margin-top: 3em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: var(--font-josefin-sans);
+  color: var(--color-very-dark-gray);
+}
+.creation__btn {
+  margin: 2rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: 2px solid var(--color-black);
+}
 
 /* ==== REFERENCE ==== */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
