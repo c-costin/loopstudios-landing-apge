@@ -1,4 +1,5 @@
 
+
 const mobileMenu = {
     asideMenuMobileELement: document.querySelector(".aside-menu"),
     linkElements: document.querySelectorAll(".aside-menu__link"),
@@ -8,6 +9,7 @@ const mobileMenu = {
     init: function()
     {
         mobileMenu.addEventMobileMenu();
+        console.log(window.location.pathname);
     },
 
     addEventMobileMenu: function()
