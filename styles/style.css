@@ -120,10 +120,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
-  gap: 1.5rem;
->>>>>>> 293b24e3b790dad6331158459af7df7c30df6a83
 }
 .creation__title {
   margin: 2rem 0;
@@ -164,11 +160,6 @@ body {
   letter-spacing: 4px;
   border: 2px solid var(--color-black);
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 293b24e3b790dad6331158459af7df7c30df6a83
 
 /* ==== REFERENCE ==== */
 .attribution {
